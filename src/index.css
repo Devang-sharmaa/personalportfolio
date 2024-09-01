@@ -1,0 +1,357 @@
+/* Default light theme */
+:root {
+  --bg-color: rgb(236, 231, 231);
+  --text-color: black;
+  --box-shadow: 5px 5px 10px 10px rgba(52, 133, 203, 0.7);
+  --icon-color: black; /* Set icon color for light mode */
+  --code-button-bg-light: rgb(122, 205, 218);
+  --code-button-text-light: white;
+}
+
+/* Dark theme */
+body.dark {
+  --bg-color: rgb(11, 26, 51);
+  --text-color: white;
+  --box-shadow: 5px 5px 10px 10px rgba(52, 133, 203, 0.7);
+  --icon-color: white; /* Set icon color for dark mode */
+  --code-button-bg-dark: rgb(122, 205, 218);
+  --code-button-text-dark: black;
+
+}
+
+.projects .btn-warning {
+  background-color: var(--code-button-bg-light);
+  color: var(--code-button-text-light);
+  border: none;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+body.dark .projects .btn-warning {
+  background-color: var(--code-button-bg-dark);
+  color: var(--code-button-text-dark);
+}
+/* Light Mode - Project Containers */
+/* Light Mode - Project Containers */
+body.light .projects .card {
+  background-color: rgb(236, 231, 231) !important;
+  color: black !important; /* Ensures text remains black */
+}
+
+
+/* Smooth Transition for Theme Changes */
+*,
+*::before,
+*::after {
+  transition: background-color 0.7s ease, color 0.5s ease, box-shadow 0.5s ease;
+}
+.about-text, .skills-text, .experience-text, .ex h1 {
+  color: white;
+}
+
+/* Section Headers - Light Mode */
+body.light .about-text, 
+body.light .skills-text, 
+body.light .experience-text, 
+body.light .ex h1 {
+  color: black;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+a {
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+/* Navbar Section */
+/* Navbar Section */
+.nav_bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav_bar .nav_items {
+  padding: 16px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: var(--text-color);
+  position: relative;
+  font-family: 'Permanent Marker', sans-serif; /* Apply Permanent Marker font */
+}
+
+.nav_bar .nav_items::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 3px;
+  background-color: rgb(79, 210, 230);
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.3s ease;
+}
+
+.nav_bar .nav_items:hover::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+.theme-toggle-btn {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  color: var(--text-color); /* Ensure icon color adapts */
+  cursor: pointer;
+  margin-left: 16px;
+  font-family: 'Permanent Marker', sans-serif; /* Apply Permanent Marker font */
+}
+
+.theme-toggle-btn:focus {
+  outline: none;
+}
+
+/* Home Section */
+.home {
+  height: 80vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.home .left {
+  /* background-color: var(--bg-color); */
+  color: var(--text-color); /* Ensure text color adapts */
+  width: 620px;
+  text-align: center;
+  padding: 30px;
+  border-radius: 10px;
+  border: 1px solid rgb(79, 210, 230);
+  box-shadow: var(--box-shadow);
+}
+
+.home .right .img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* Light Mode - Button Color */
+body.light .btn-outline-warning {
+  color: white; /* Text color */
+  background-color: rgb(62, 157, 172); /* Blue background */
+  border-color: rgb(62, 157, 172); /* Border color */
+}
+
+body.light .btn-outline-warning:hover {
+  background-color: rgb(122, 205, 218); /* Darker blue on hover */
+  border-color: rgb(122, 205, 218); /* Darker border on hover */
+}
+body.dark .btn-outline-warning {
+  color: white; /* Text color */
+  background-color: rgb(62, 157, 172); /* Orange background */
+  border-color: rgb(62, 157, 172); /* Border color */
+}
+
+body.dark .btn-outline-warning:hover {
+  background-color: rgb(122, 205, 218); /* Darker orange on hover */
+  border-color: rgb(122, 205, 218); /* Darker border on hover */
+}
+
+.home .right .img img {
+  height: 400px;
+  width: 400px;
+  border: 3px solid rgb(3, 4, 4);
+  border-radius: 100%;
+  background: linear-gradient(135deg, #ff6b6b, #f94d6a, #24c6dc, #514a9d);
+  background-size: 200% 200%;
+  animation: floatEffect 6s infinite ease-in-out;
+  position: relative;
+  z-index: 1;
+}
+
+.home .right .img img::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 100%;
+  border: 10px solid rgba(255, 255, 255, 0.5);
+  z-index: -1;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
+  animation: pulseEffect 2s infinite;
+}
+
+@keyframes floatEffect {
+  0% {
+    transform: translateY(0px);
+    box-shadow: 0 0 20px #db4747, 0 0 40px rgba(255, 255, 255, 0.2);
+  }
+  50% {
+    transform: translateY(-20px);
+    box-shadow: 0 0 40px #db4747, 0 0 60px rgba(255, 255, 255, 0.2);
+  }
+  100% {
+    transform: translateY(0px);
+    box-shadow: 0 0 20px #db4747, 0 0 40px rgba(255, 255, 255, 0.2);
+  }
+}
+
+@keyframes pulseEffect {
+  0%, 100% {
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.5), 0 0 50px rgba(255, 255, 255, 0.3);
+  }
+  50% {
+    box-shadow: 0 0 40px rgba(255, 255, 255, 0.7), 0 0 100px rgba(255, 255, 255, 0.5);
+  }
+}
+
+/* Section Headings */
+.about-text h1,
+.skills-text h1,
+.ex h1,
+.projects h1,
+.contact h1 {
+  font-family: 'Permanent Marker', sans-serif; /* Apply Permanent Marker font */
+  font-size: 2rem; /* Adjust the size as needed */
+  margin-bottom: 20px;
+  color: var(--text-color);
+}
+
+/* Ensure consistency for other headings if any */
+h1, h2, h3 {
+  font-family: 'Permanent Marker', sans-serif; /* Apply Permanent Marker font to all heading levels */
+  color: var(--text-color);
+}
+
+/* Experience Section */
+.ex {
+  width: 900px;
+  color: var(--text-color); /* Ensure text color adapts */
+}
+
+.ex-items {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: justify;
+  background-color: var(--bg-color);
+  margin: 20px;
+  padding: 30px;
+  width: 800px;
+  border-radius: 10px;
+  border: 1px solid rgb(79, 210, 230);
+  box-shadow: var(--box-shadow);
+}
+
+/* Skills Section */
+.skills {
+  width: 900px;
+  color: var(--text-color); /* Ensure text color adapts */
+}
+
+.skills .items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: auto;
+}
+
+.skills .items .item {
+  width: calc(33.33%);
+  background-color: black; /* Default background for dark mode */
+  margin: 20px;
+  text-align: center;
+  padding: 20px;
+  border-radius: 10px;
+  border: 1px solid rgb(79, 210, 230);
+  box-shadow: var(--box-shadow);
+  color: var(--text-color); /* Ensure text color adapts */
+}
+
+body.light .skills .items .item {
+  background-color: rgb(236, 231, 231); /* Background color for light mode */
+  color: black; /* Text color for light mode */
+}
+
+.skills .items .item img {
+  width: 70px;
+}
+
+/* Contact Section */
+.contact-icon {
+  height: 30vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--text-color); /* Ensure text color adapts */
+}
+
+.contact-icon .items {
+  /* background-color: black; */
+  margin: 10px;
+  height: 70px;
+  width: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
+  border: 2px solid rgb(79, 210, 230);
+  background-color: var(--bg-color);
+  box-shadow: var(--box-shadow);
+  animation: continuousFloat 1.5s ease-in-out infinite; /* Continuous floating animation */
+}
+
+@keyframes continuousFloat {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.contact-icon .items:hover {
+  background-color: var(--bg-color);
+  box-shadow: var(--box-shadow);
+  /* animation: continuousFloat 1.5s ease-in-out infinite; Continuous floating animation */
+  animation: none;
+}
+
+
+.contact-icon .items .icons {
+  font-size: 2rem;
+  color: var(--icon-color); /* Use the icon color variable */
+ 
+}
+
+.about-text, .skills-text, .experience-text {
+  color: var(--text-color); /* Ensure text color adapts */
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  text-align: justify;
+}
+
+.ex h1 {
+  margin-bottom: 20px;
+  color: rgb(255, 255, 255);
+  font-size: 2rem;
+}
+
+.ex .ex-items img {
+  height: 100px;
+  width: 100px;
+  border-radius: 10px;
+}
+
+/* Apply to other sections as needed */
