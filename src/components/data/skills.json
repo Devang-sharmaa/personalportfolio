@@ -1,34 +1,42 @@
 [
-    {
-      "title": "HTML",
-      "imageSrc": "skills/html.png"
-    },
-    {
-      "title": "CSS",
-      "imageSrc": "skills/css.png"
-    },
-    {
-      "title": "JavaScript",
-      "imageSrc": "skills/javascript.png"
-    },
-    {
-      "title": "React",
-      "imageSrc": "skills/react.png"
-    },
-    {
-      "title": "Node",
-      "imageSrc": "skills/node.png"
-    },
-    {
-      "title":"Vue",
-      "imageSrc":"skills/vue.png"
-    },
-    {
-      "title": "Express",
-      "imageSrc": "skills/ejs.png"
-    },
-    {
-      "title": "MongoDB",
-      "imageSrc": "skills/mongodb.png"
-    }
-  ]
+  {
+    "id": 1,
+    "title": "HTML",
+    "imageSrc": "skills/html.png"
+  },
+  {
+    "id": 2,
+    "title": "CSS",
+    "imageSrc": "skills/css.png"
+  },
+  {
+    "id": 3,
+    "title": "JavaScript",
+    "imageSrc": "skills/javascript.png"
+  },
+  {
+    "id": 4,
+    "title": "React",
+    "imageSrc": "skills/react.png"
+  },
+  {
+    "id": 5,
+    "title": "Node",
+    "imageSrc": "skills/node.png"
+  },
+  {
+    "id": 6,
+    "title": "Vue",
+    "imageSrc": "skills/vue.png"
+  },
+  {
+    "id": 7,
+    "title": "Express",
+    "imageSrc": "skills/ejs.png"
+  },
+  {
+    "id": 8,
+    "title": "MongoDB",
+    "imageSrc": "skills/mongodb.png"
+  }
+]

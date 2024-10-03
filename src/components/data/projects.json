@@ -1,27 +1,26 @@
 [
-    {
-      "key": 1,
-      "title": "Credit Card Fraud Detection",
-      "imageSrc": "https://miro.medium.com/max/739/1*TsEsvIxRRQ8mFpebJXRpXg.png",
-      "description": "This is a project made with Machine learning in python.",
-      "demo": "https://www.example.com",
-      "source": "https://www.github.com"
-    },
-    {
-      "key": 2,
-      "title": "Parkinson Disease detection",
-      "imageSrc": "https://www.healthcheckup.com/wp-content/uploads/2016/12/Parkinsons-Disease.jpg",
-      "description": "This is a project made with Machine learning in python.",
-      "demo": "https://www.example.com",
-      "source": "https://www.github.com"
-    },
-    
-    {
-      "key": 3,
-      "title": "React Firebase App",
-      "imageSrc": "https://cdn.pixabay.com/photo/2021/03/02/01/07/cyberpunk-6061251_640.jpg",
-      "description": "This is a project made with complete React js.",
-      "demo": "https://www.example.com",
-      "source": "https://www.github.com"
-    }
-  ]
+  {
+    "id": 1,
+    "title": "Credit Card Fraud Detection",
+    "imageSrc": "https://miro.medium.com/max/739/1*TsEsvIxRRQ8mFpebJXRpXg.png",
+    "description": "This is a project made with Machine learning in python.",
+    "demo": "https://www.example.com",
+    "source": "https://www.github.com"
+  },
+  {
+    "id": 2,
+    "title": "Parkinson Disease detection",
+    "imageSrc": "https://www.healthcheckup.com/wp-content/uploads/2016/12/Parkinsons-Disease.jpg",
+    "description": "This is a project made with Machine learning in python.",
+    "demo": "https://www.example.com",
+    "source": "https://www.github.com"
+  },
+  {
+    "id": 3,
+    "title": "React Firebase App",
+    "imageSrc": "https://cdn.pixabay.com/photo/2021/03/02/01/07/cyberpunk-6061251_640.jpg",
+    "description": "This is a project made with complete React js.",
+    "demo": "https://www.example.com",
+    "source": "https://www.github.com"
+  }
+]
