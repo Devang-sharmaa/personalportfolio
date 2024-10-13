@@ -10,11 +10,11 @@ const Skills = () => {
           {skills.map((data) => (
             <div
               className="item"
-              key={data.id}  // Using unique 'id' for each skill
+              key={data.id}
               data-aos="flip-left"
               data-aos-duration="1000"
             >
-              <img src={`/assets/${data.imageSrc}`} alt={data.title} />
+              <img src={data.imageSrc} alt={data.title} />
               <h3>{data.title}</h3>
             </div>
           ))}
